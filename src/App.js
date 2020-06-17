@@ -6,10 +6,12 @@ import { Container, Menu, PageBody} from './AppStyled';
 
 import HomeScreen from './pages/HomeScreen';
 import Tela2Screen from './pages/Tela2Screen';
+import PrivateRoute from './components/PrivateRoute';
 
 import MenuItem from './components/MenuItem';
+import Cart from './components/Cart';
 
-import PrivateRoute from './components/PrivateRoute';
+
 
 
 export default () => {
@@ -51,10 +53,11 @@ export default () => {
 
                 </PageBody>
 
+                <Cart/>
+
             </Container>
 
 
-            <h1>Oi, {name}</h1>
 
             
         </BrowserRouter>
